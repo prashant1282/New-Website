@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greptile — Competitive Analysis | April 2026</title>
+  <meta name="description" content="Detailed competitive analysis of Greptile: founders, funding, product, ICP, pricing, competitors, and negative feedback.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #09090b;
+      color: #fafafa;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: #a78bfa; text-decoration: none; transition: color 0.2s ease; }
+    a:hover { color: #c4b5fd; text-decoration: underline; }
+
+    .container { max-width: 960px; margin: 0 auto; padding: 60px 24px; }
+
+    /* Header */
+    .hero {
+      padding: 60px 0 40px;
+      border-bottom: 1px solid rgba(167, 139, 250, 0.15);
+      margin-bottom: 48px;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 14px;
+      background: rgba(167, 139, 250, 0.1);
+      border: 1px solid rgba(167, 139, 250, 0.25);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #a78bfa;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #fafafa 0%, #a78bfa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle {
+      font-size: 18px;
+      color: #a1a1aa;
+      margin-bottom: 8px;
+    }
+    .meta {
+      font-size: 14px;
+      color: #71717a;
+    }
+
+    /* Sections */
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 56px 0 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(167, 139, 250, 0.15);
+      color: #fafafa;
+    }
+    h2:first-of-type { margin-top: 0; }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 32px 0 12px;
+      color: #e4e4e7;
+    }
+
+    p { margin-bottom: 16px; color: #d4d4d8; }
+
+    ul, ol { margin: 0 0 20px 24px; color: #d4d4d8; }
+    li { margin-bottom: 8px; }
+    li strong { color: #fafafa; }
+
+    strong { color: #fafafa; font-weight: 600; }
+    em { color: #c4b5fd; font-style: normal; }
+
+    /* Snapshot table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: rgba(24, 24, 27, 0.6);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(167, 139, 250, 0.15);
+    }
+    th, td {
+      padding: 14px 20px;
+      text-align: left;
+      border-bottom: 1px solid rgba(167, 139, 250, 0.08);
+      font-size: 15px;
+    }
+    th {
+      background: rgba(167, 139, 250, 0.08);
+      font-weight: 600;
+      color: #a78bfa;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    tr:last-child td { border-bottom: none; }
+    td:first-child { font-weight: 600; color: #fafafa; width: 30%; }
+
+    /* Blockquote-style callouts */
+    .callout {
+      padding: 20px 24px;
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.08), rgba(79, 70, 229, 0.04));
+      border-left: 3px solid #7c3aed;
+      border-radius: 8px;
+      margin: 24px 0;
+    }
+
+    /* Divider */
+    hr {
+      border: none;
+      height: 1px;
+      background: rgba(167, 139, 250, 0.15);
+      margin: 48px 0;
+    }
+
+    /* Source list */
+    .sources ul { list-style: none; margin-left: 0; }
+    .sources li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(167, 139, 250, 0.08);
+      font-size: 14px;
+    }
+    .sources li:last-child { border-bottom: none; }
+
+    /* Footer */
+    footer {
+      margin-top: 80px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(167, 139, 250, 0.15);
+      text-align: center;
+      color: #71717a;
+      font-size: 13px;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .container { padding: 40px 20px; }
+      table { font-size: 13px; }
+      th, td { padding: 10px 12px; }
+      td:first-child { width: 40%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header class="hero">
+      <span class="eyebrow">Competitive Analysis</span>
+      <h1>Greptile</h1>
+      <p class="subtitle">Codebase-aware AI code review agent for pull requests</p>
+      <p class="meta">Research Analyst Report · April 2026</p>
+    </header>
+
+    <h2>Company Snapshot</h2>
+    <table>
+      <tbody>
+        <tr><td>Founded</td><td>2023</td></tr>
+        <tr><td>Total raised</td><td>$30M (incl. $25M Series A)</td></tr>
+        <tr><td>Valuation</td><td>$180M</td></tr>
+        <tr><td>Employees</td><td>~20</td></tr>
+        <tr><td>Headquarters</td><td>San Francisco, CA (1664 Larkin Street)</td></tr>
+        <tr><td>Compliance</td><td>SOC 2</td></tr>
+        <tr><td>YC batch</td><td>W24</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Founders &amp; Leadership</h2>
+    <ul>
+      <li><strong>Daksh Gupta</strong> — Co-founder &amp; CEO. Georgia Tech CS '23. Went viral in 2024 for his "9-9-6 / 84-hour workweek" hiring pitch; received death threats and a flood of applicants. <a href="https://www.linkedin.com/in/dakshg" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+      <li><strong>Soohoon Choi</strong> — Co-founder. Georgia Tech CS + Math '23. <a href="https://www.linkedin.com/in/soohoonchoi/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+      <li><strong>Vaishant Kameswaran</strong> — Co-founder. Georgia Tech CS.</li>
+    </ul>
+
+    <h2>Funding History</h2>
+    <table>
+      <thead>
+        <tr><th>Round</th><th>Amount</th><th>Date</th><th>Lead Investor(s)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Seed</td><td>$4M</td><td>2024</td><td>Initialized Capital (post-YC W24)</td></tr>
+        <tr><td>Series A</td><td>$25M</td><td>Sep 2025</td><td>Benchmark (Eric Vishria), with Initialized, YC, Cory Levy</td></tr>
+      </tbody>
+    </table>
+    <div class="callout"><strong>Total raised:</strong> ~$30M at <strong>$180M valuation</strong></div>
+
+    <h2>Key Milestones</h2>
+    <ul>
+      <li><strong>2023</strong> — Founded after pivoting from "Tabnam" (AI shopping assistant that got YC-rejected)</li>
+      <li><strong>Winter 2024</strong> — Accepted into Y Combinator W24</li>
+      <li><strong>Mar 2024</strong> — Launched on Hacker News: "RAG on codebases that actually works"</li>
+      <li><strong>Oct 2024</strong> — Daksh Gupta's 84-hour workweek post goes viral on X</li>
+      <li><strong>Sep 2025</strong> — $25M Series A + v3 launch for code validation</li>
+      <li><strong>Early 2026</strong> — <strong>v4 release</strong>: confidence scoring, 74% increase in addressed comments/PR, TREX test-generation agent, Greptile MCP server</li>
+      <li><strong>2026</strong> — 500M+ lines reviewed in a single month; 180K+ bugs claimed prevented</li>
+    </ul>
+
+    <h2>Product &amp; Core Features</h2>
+    <ul>
+      <li><strong>Codebase graph indexing</strong> — dependency graph of files, functions, symbols across the whole repo</li>
+      <li><strong>Parallel agent swarm</strong> — multiple agents assess PR impact cross-module</li>
+      <li><strong>Continuous learning</strong> — learns team conventions from past reviewer comments</li>
+      <li><strong>Custom rules</strong> — plain-English standards (via <code>greptile.json</code>)</li>
+      <li><strong>TREX</strong> (early access) — autonomous test generation &amp; sandbox execution per PR</li>
+      <li><strong>Confidence scoring</strong> (v4) — each comment tagged with certainty to aid triage</li>
+      <li><strong>Greptile MCP server</strong> — exposes review data to Claude Code, Cursor, Codex, Devin</li>
+    </ul>
+
+    <h2>ICP &amp; Notable Customers</h2>
+    <p><strong>Ideal Customer Profile:</strong> Mid-market to enterprise engineering teams on GitHub/GitLab who can't afford missed bugs and have discipline to triage noise. Best-fit: complex multi-module codebases where changes cascade.</p>
+    <p><strong>Clients:</strong> Brex, Whoop, Substack, Klaviyo, Zapier, Joby, PostHog, WorkOS, Browserbase, Retool, Bilt, Podium, Gumloop, Y Combinator internal team — <strong>9,000+ teams total</strong></p>
+    <div class="callout"><strong>Flagship case:</strong> Brex ships <strong>30% faster</strong> with Greptile</div>
+
+    <h2>Pricing Model</h2>
+    <table>
+      <thead>
+        <tr><th>Tier</th><th>Price</th><th>Details</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Cloud</td><td>$30/dev/month</td><td>50 reviews included · $1/review overage</td></tr>
+        <tr><td>Free tier</td><td>$0</td><td>Qualified OSS projects only</td></tr>
+        <tr><td>Startup discount</td><td>Custom</td><td>Pre-Series A companies</td></tr>
+        <tr><td>Enterprise</td><td>Custom annual</td><td>Self-hosted AWS · BYO-LLM · SSO · SOC 2</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Trial:</strong> 14-day free trial · <strong>GTM:</strong> Bottom-up PLG via GitHub App → enterprise sales</p>
+
+    <h2>Social &amp; Activity</h2>
+    <table>
+      <tbody>
+        <tr><td>Twitter/X</td><td>Highly active — Daksh Gupta (@dakshgup) is a viral-tier founder voice</td></tr>
+        <tr><td>LinkedIn</td><td>Active company page — weekly customer spotlights (Podium, Gumloop, etc.)</td></tr>
+        <tr><td>Blog</td><td>greptile.com/blog — technical releases (v3, v4), benchmarks</td></tr>
+        <tr><td>Hacker News</td><td>Launch thread (Mar 2024) hit front page; team responds to criticism directly</td></tr>
+        <tr><td>YC</td><td>W24 alumni profile still drives top-of-funnel</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Competitors &amp; Positioning</h2>
+    <table>
+      <thead>
+        <tr><th>Competitor</th><th>Positioning vs. Greptile</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>CodeRabbit</td><td>#1 direct rival; larger user base, lower false-positive rate (2 vs 11/run), leaner comments</td></tr>
+        <tr><td>Graphite Agent</td><td>PR-platform-native; caught only 6% bugs vs Greptile's 82% in third-party benchmark</td></tr>
+        <tr><td>Cursor Bugbot</td><td>In-editor AI review from Cursor</td></tr>
+        <tr><td>Bito</td><td>PR merge acceleration, 87% human-grade feedback claim</td></tr>
+        <tr><td>Panto AI, CodeAnt, Qodo</td><td>Emerging challengers</td></tr>
+        <tr><td>GitHub Copilot PR reviews</td><td>Incumbent bundled option</td></tr>
+      </tbody>
+    </table>
+    <div class="callout"><strong>Positioning:</strong> The <strong>highest-recall AI reviewer</strong> ("catches 3x more bugs, merge 4x faster") built on full-graph codebase context vs. diff-only tools.</div>
+
+    <h2>Unique Selling Points</h2>
+    <ol>
+      <li><strong>Whole-codebase graph over diff-only review</strong> — catches multi-file logical bugs (NVIDIA/Netflix/Meta public examples) that diff-scoped tools miss</li>
+      <li><strong>Highest third-party bug-catch rate in the category</strong> — 82% vs CodeRabbit 44%, Cursor 58%, Graphite 6%</li>
+      <li><strong>Singular focus on review (not generation)</strong> — intentional product bet: "nobody wants a flaky code-review robot"; reliability-first positioning</li>
+      <li><strong>Agent-interop via MCP</strong> — Greptile becomes the review substrate for Claude Code, Cursor, Devin agents instead of competing with them</li>
+    </ol>
+
+    <h2>Negative Feedback (Hacker News, Reddit, Community)</h2>
+    <ul>
+      <li><strong>High false-positive rate</strong> — third-party benchmarks show ~11 false positives/run vs CodeRabbit's 2; reviewers note it "requires a mature team to manage effectively" (source: Panto AI, Techsy benchmark analyses, 2026)</li>
+      <li><strong>Trust/honesty incidents</strong> — Hacker News users accused Greptile of misleading marketing-chart claims and misrepresenting self-hosting availability ("tied to enterprise plan... they're still lying"). One thread characterized them as "utter YC trash with no real customers"</li>
+      <li><strong>Founder/culture controversy</strong> — Daksh Gupta's 2024 viral "84-hour workweek, no work-life balance" post drew death threats and polarized the developer community; some engineers refuse to evaluate the product on principle</li>
+      <li><strong>Noise vs. precision tradeoff</strong> — higher comment volume can overwhelm PR authors; addressed-comment rate was only 30% pre-v4 (now 43% post-v4 per Greptile's own metrics) — still below ideal</li>
+      <li><strong>Tiny team (~20) vs. Series A scope</strong> — capacity questions around enterprise support, especially given aggressive land-and-expand into Brex/Klaviyo-scale accounts</li>
+    </ul>
+
+    <h2>Sources</h2>
+    <div class="sources">
+      <ul>
+        <li><a href="https://www.greptile.com/pricing" target="_blank" rel="noopener">Greptile pricing page</a></li>
+        <li><a href="https://www.greptile.com/blog/greptile-v4" target="_blank" rel="noopener">Greptile v4 launch blog</a></li>
+        <li><a href="https://techcrunch.com/2025/07/18/benchmark-in-talks-to-lead-series-a-for-greptile-valuing-ai-code-reviewer-at-180m-sources-say/" target="_blank" rel="noopener">Benchmark Series A — TechCrunch, Jul 2025</a></li>
+        <li><a href="https://siliconangle.com/2025/09/23/greptile-bags-25m-funding-take-coderabbit-graphite-ai-code-validation/" target="_blank" rel="noopener">$25M Series A close — SiliconANGLE, Sep 2025</a></li>
+        <li><a href="https://news.gatech.edu/news/2026/01/05/y-combinator-backing-and-30m-investment-take-startup-greptile-next-level" target="_blank" rel="noopener">Georgia Tech News — Jan 2026</a></li>
+        <li><a href="https://blog.initialized.com/2024/10/founder-spotlight-greptiles-daksh-gupta/" target="_blank" rel="noopener">Initialized founder spotlight</a></li>
+        <li><a href="https://www.ycombinator.com/companies/greptile" target="_blank" rel="noopener">YC company profile</a></li>
+        <li><a href="https://www.inc.com/sam-blum/this-22-year-old-tech-ceo-says-an-80-hour-work-week-is-a-lifestyle-choice-it-earned-him-death-threats-and-job-seekers/91022060" target="_blank" rel="noopener">Inc — viral 80-hour workweek</a></li>
+        <li><a href="https://news.ycombinator.com/item?id=46766961" target="_blank" rel="noopener">HN thread — AI code review bubble</a></li>
+        <li><a href="https://www.getpanto.ai/blog/coderabbit-vs-greptile-ai-code-review-tools-compared" target="_blank" rel="noopener">Panto AI — Greptile vs CodeRabbit benchmark</a></li>
+        <li><a href="https://techsy.io/blog/best-ai-code-review-tools" target="_blank" rel="noopener">Techsy benchmark — Best AI code review 2026</a></li>
+        <li><a href="https://sacra.com/c/greptile/" target="_blank" rel="noopener">Sacra analysis</a></li>
+        <li><a href="https://getoden.com/blog/coderabbit-vs-cursor-bugbot-vs-greptile-vs-graphite-agent" target="_blank" rel="noopener">Oden comparison — CodeRabbit vs Bugbot vs Greptile vs Graphite</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      Competitive Analysis · April 2026 · Compiled from public sources
+    </footer>
+
+  </div>
+</body>
+</html>
